@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("unnamed.webp");
+    background-size: cover;
+    background-position: 0rem;
+    opacity: unset;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    backdrop-filter: blur(7px);
+}
+
+/* body::before{
+    background-color: rgba(0,0,0,rgba(0, 0, 0, 0.25));
+} */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+h1 {
+    /* font-size: large; */
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.container {
+    height: 65vh;
+    /* 702px */
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    /* 15px */
+    border: 2px solid yellow;
+    box-shadow: 5px 5px 7px 10px yellow;
+}
+
+.game {
+    height: 60vmin;
+    width: 75vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    /* 180px */
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 3px 3px 2rem 10px rgb(166, 65, 225);
+    font-size: 8vmin;
+    background-color: white;
+    color: #212529;
+}
+
+input {
+    padding: 5px;
+}
+
+#backBtn,
+#continueBtn,
+.startGameBtn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#continueBtn:hover,
+#backBtn:hover,
+.startGameBtn:hover {
+    background-color: #0056b3;
+}
+
+.startGameBtn {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 1.5vh;
+}
+
+.playerInform {
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px 20px rgb(220, 220, 220);
+}
+
+/* div.background {
+    background: url(klematis.jpg) repeat;
+    border: 1px solid black;
+  }
+   */
+.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 5px solid black;
+    opacity: 0.6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.transbox1 {
+    margin: 30px;
+    background-color: #ffffff;
+
+    /* border: 1px solid black; */
+    opacity: 0.6;
+}
+
+.transbox label {
+    margin: 3%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.transbox button {
+    margin: 3%;
+    /* font-weight: bold;
+    color: #000000; */
+}
+
+.transbox1 h2 {
+    margin-bottom: 2vh;
+    box-shadow: 3px 3px 2rem 10px rgb(166, 65, 225);
+    width: 400px;
+}
+
+.transbox1 {
+    margin-bottom: 10%;
+    /* width: auto; */
+}
+
+#currentTurn {
+    margin-top: 1vh;
+    /* width: auto; */
+
+    border: 3px solid whitesmoke;
+}
+
+.hide {
+    display: none;
+}
+
+.player1 {
+    margin-right: 30px;
+}
+
+.player3 {
+    margin-left: 30px;
+}
+
+label {
+    font-size: 20px;
+    margin: 2vh;
+    color: #212529;
+}
+
+input {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #555;
+    outline: none;
+    color: black;
+    box-shadow: inset 2px 2px 3px 3px rgb(188, 176, 116);
+}
+
+input[type=text]:hover {
+    background-color: rgb(152, 207, 233);
+}
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 3px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    height: auto;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 3px 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+    .overallContainer {
+        height: calc(100vh - 100px);
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .overall2Container {
+        height: 80vh;
+    }
+
+    .container {
+        height: 70vmin;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-position: center;
+        overflow: auto;
+        height: 100%;
+    }
+
+    .overallContainer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container {
+        height: 70vmin;
+        width: 90vmin;
+        max-width: 350px;
+        max-height: 350px;
+        gap: 1vmin;
+        box-shadow: 3px 3px 5px 5px yellow;
+    }
+
+    .game {
+        height: 65vmin;
+        width: 65vmin;
+        gap: 1vmin;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+        max-height: 100px;
+        max-width: 100px;
+        font-size: 10vmin;
+        box-shadow: 1px 1px 0.5rem 3px rgb(166, 65, 225);
+    }
+
+    .playerInform {
+        width: 90vw;
+        max-width: 400px;
+        margin-bottom: 30px;
+        padding: 15px 0;
+        box-shadow: 5px 5px 10px 10px rgb(220, 220, 220);
+    }
+
+    .transbox1 {
+        width: 90vw;
+    }
+
+    .transbox1 h2 {
+        width: 90vw;
+        font-size: 5vw;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    input[type=text] {
+        width: 80%;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .button-28 {
+        font-size: 16px;
+        padding: 12px 20px;
+        min-height: 50px;
+    }
+
+    h1 {
+        font-size: 8vw;
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra small devices (phones < 400px) */
+@media (max-width: 400px) {
+    .container {
+        width: 95vmin;
+        height: 95vmin;
+    }
+
+    .box {
+        height: 18vmin;
+        width: 18vmin;
+        font-size: 8vmin;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+}
