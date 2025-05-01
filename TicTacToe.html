@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Game</title>
+    <link rel="stylesheet" href="TicTacToe.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+    <main>
+        <div class="overallContainer">
+
+            <div class="outer">
+                <div id="playerInform" class="playerInform transbox">
+                    <label for="player1Name" class="player1Name">Name Of Player-1 :</label>
+                    <input type="text" id="player1name" placeholder="Player1">
+                    <label for="player2Name" class="player2Name">Name Of Player-2 :</label>
+                    <input type="text" id="player2name" placeholder="Player2">
+                    <button class="button-28 startGameBtn" role="button" onclick="remove()">Start</button>
+                </div>
+            </div>
+
+            <div class="transbox1">
+                <h2 id="currentTurn" class="hide currentTurn"></h2>
+            </div>
+
+            <div id="GameOperation" class="container hide">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <script src="TicTacToe.js"></script>
+</body>
+
+</html>
